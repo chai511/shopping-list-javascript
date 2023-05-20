@@ -17,14 +17,14 @@ function createListElement(){
 }
 
 function addListAfterKeyPress(event){
-	if (inputLength()>0 && event.keyCode === 13){
+	if (inputLength()>0 && event.keyCode === 13 && inpt.value.trim()!==""){
 		createListElement();
 	}
 
 }
 
 function addListAfterBtnClick(){
-	if (inputLength()>0){
+	if (inputLength()>0 && inpt.value.trim()!=""){
 		createListElement();
 	}
 }
